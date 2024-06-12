@@ -1,4 +1,7 @@
 # To be used in google collab notebooks
+# https://colab.research.google.com/drive/1Sdp5DHkr3J8nIUr6_qGY_uAw-Q5x90Dv?usp=sharing
+
+import pandas as pd
 
 # Intraday data shows NaN in the last volume row. We'll change it with an average
 def fill_na_with_previous_mean(df, window=78):
