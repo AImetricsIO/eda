@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='eda',   
+    name='eda',
     version='0.1',
-    py_modules=['edabasic.py'],
+    py_modules=['edabasic'],
     install_requires=[
-        # Dependencies list
+        # Lista de dependencias si las tienes
     ],
     author='AImetrics IO',
     author_email='aimetricsio@gmail.com',
