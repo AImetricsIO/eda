@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='eda',   
     version='0.1',
-    py_modules=['edabasic'],
+    py_modules=['edabasic.py'],
     install_requires=[
         # Dependencies list
     ],
