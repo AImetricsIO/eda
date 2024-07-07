@@ -3,6 +3,8 @@ import sys
 from IPython.display import clear_output
 
 def install_and_import(package_name):
+    # How to call it: install_and_import('pandas_ta')
+    # Installs in Google Colab external libraries
     try:
         # Try to import the package
         __import__(package_name)
@@ -24,5 +26,9 @@ def install_and_import(package_name):
         except Exception as e:
             print(f"An error occurred during installation: {e}")
 
-# How to call it
-# install_and_import('pandas_ta')
+# Funcion to show the company in selector
+def display_selected_ticker(ticker):
+    global code, name
+    code = ticker
+    name = df[df['code'] == ticker]['name'].values[0]
+    print(f"Selected Ticker: {code}\nCompany Name: {name}")
